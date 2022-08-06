@@ -49,7 +49,6 @@ nav a:hover {
 #banner {
     display: flex;
     width: 100%;
-    align-items: center;
 }
 /*=========
 =ACERCA DE=
@@ -57,7 +56,7 @@ nav a:hover {
 #acerca-de {
     display: flex;
     background-color: cornflowerblue;
-    padding: 10px;
+    padding: 20px;
     align-items: center;
     position: relative;
 }
@@ -86,19 +85,18 @@ nav a:hover {
 /*===================
 =Experiencia laboral=
 ===================*/
-#expe-lab {
-    justify-content: space-between;
+.exp-lab {
+    padding: 20px;
+    background-color:cornflowerblue;
 }
 .logo-empresa {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
 }
 .imagen-empresa {
-    display: flex;
     border-radius: 100%;
     max-height: 200px;
-    padding: 15px;
 }
 .text-lab {
     display: flex;
@@ -110,5 +108,90 @@ nav a:hover {
     }
     .imagen-empresa {
         border-radius: 0%;
+    }
+}
+/*=========
+=Proyectos=
+=========*/
+#Proyectos {
+    justify-content: space-between;
+    padding: 20px;
+}
+.img-proyecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-proyecto {
+    display: flex;
+    border-radius: 100%;
+    max-height: 200px;
+    padding: 15px;
+}
+@media (max-width:575px) {
+    .img-proyecto {
+        justify-content: center;
+    }
+    .imagen-proyecto {
+        border-radius: 0%;
+    }
+}
+/*==================
+=hard & soft skills=
+===================*/
+.skills {
+    max-height: 150px;
+    min-height: 50px;
+}
+/*Redes sociales*/
+#hard-soft-skills {
+    display: flex;
+    justify-content:center;
+    padding: 15px;
+}
+.img-skills {
+    max-height: 150px;
+}
+/*Pantallas pequeñas*/
+@media (max-width:575px) {
+    #sociales {
+        justify-content: center;
+    }
+}
+/*======
+=footer=
+======*/
+footer {
+    padding: 20px;
+    display: flex;
+    height: 70 px;
+    background-color: black;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 10px;
+}
+/*Logo argentina programa*/
+#logo-footer {
+    display: flex;
+    justify-content: center;
+}
+.logo-footer-arg {
+    max-height: 75px;
+    min-height: 50px;
+}
+/*Redes sociales*/
+#sociales-footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.redes-footer {
+    max-height: 50px;
+}
+
+/*Pantallas pequeñas*/
+@media (max-width:575px) {
+    #sociales-footer {
+        justify-content: center;
     }
 }
