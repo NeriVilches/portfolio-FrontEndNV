@@ -1,0 +1,114 @@
+/*======
+=HEADER=
+======*/
+header {
+    display: flex;
+    height: 70 px;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+/*Logo argentina programa*/
+#logo-img {
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    max-height: 75px;
+    min-height: 50px;
+}
+/*Redes sociales*/
+#sociales {
+    display: flex;
+    justify-content: right;
+    padding: 15px;
+}
+.redes {
+    max-height: 50px;
+}
+/*botón de inicio*/
+#button {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-right: 10px;
+}
+nav a:hover {
+    color: blue;
+}
+/*Pantallas pequeñas*/
+@media (max-width:575px) {
+    #sociales {
+        justify-content: center;
+    }
+    #button {
+        justify-content: center;
+    }
+}
+#banner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+/*=========
+=ACERCA DE=
+=========*/
+#acerca-de {
+    display: flex;
+    background-color: cornflowerblue;
+    padding: 10px;
+    align-items: center;
+    position: relative;
+}
+#nombre {
+    font-weight: bold;
+    margin-top: 20px;
+}
+/*Foto de perfil*/
+#posición-foto {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 70%;
+}
+#foto-perfil {    
+    border-radius: 100%;
+    max-height: 200px;
+}
+@media (max-width:575px) {
+    #posición-foto {
+        position: relative;
+        bottom: 0%;
+        justify-content: center;
+    }
+}
+/*===================
+=Experiencia laboral=
+===================*/
+#expe-lab {
+    justify-content: space-between;
+}
+.logo-empresa {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.imagen-empresa {
+    display: flex;
+    border-radius: 100%;
+    max-height: 200px;
+    padding: 15px;
+}
+.text-lab {
+    display: flex;
+    justify-content: right;
+}
+@media (max-width:575px) {
+    .logo-empresa {
+        justify-content: center;
+    }
+    .imagen-empresa {
+        border-radius: 0%;
+    }
+}
