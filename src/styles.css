@@ -1,1 +1,198 @@
 /* You can add global styles to this file, and also import other style files */
+/*======
+=HEADER=
+======*/
+header {
+    display: flex;
+    height: 70 px;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+/*Logo argentina programa*/
+#logo-img {
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    max-height: 75px;
+    min-height: 50px;
+}
+/*Redes sociales*/
+#sociales {
+    display: flex;
+    justify-content: right;
+    padding: 15px;
+}
+.redes {
+    max-height: 50px;
+}
+/*botón de inicio*/
+#button {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-right: 10px;
+}
+nav a:hover {
+    color: blue;
+}
+/*Pantallas pequeñas*/
+@media (max-width:575px) {
+    #sociales {
+        justify-content: center;
+    }
+    #button {
+        justify-content: center;
+    }
+}
+#banner {
+    display: flex;
+    width: 100%;
+}
+/*=========
+=ACERCA DE=
+=========*/
+#acerca-de {
+    display: flex;
+    background-color: cornflowerblue;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+}
+#nombre {
+    font-weight: bold;
+    margin-top: 20px;
+}
+/*Foto de perfil*/
+#posición-foto {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 70%;
+}
+#foto-perfil {    
+    border-radius: 100%;
+    max-height: 200px;
+}
+@media (max-width:575px) {
+    #posición-foto {
+        position: relative;
+        bottom: 0%;
+        justify-content: center;
+    }
+}
+/*===================
+=Experiencia laboral=
+===================*/
+.exp-lab {
+    padding: 20px;
+    background-color:cornflowerblue;
+}
+.logo-empresa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-empresa {
+    border-radius: 100%;
+    max-height: 200px;
+}
+.text-lab {
+    display: flex;
+    justify-content: right;
+}
+@media (max-width:575px) {
+    .logo-empresa {
+        justify-content: center;
+    }
+    .imagen-empresa {
+        border-radius: 0%;
+    }
+}
+/*=========
+=Proyectos=
+=========*/
+#Proyectos {
+    justify-content: space-between;
+    padding: 20px;
+}
+.img-proyecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-proyecto {
+    display: flex;
+    border-radius: 100%;
+    max-height: 200px;
+    padding: 15px;
+}
+@media (max-width:575px) {
+    .img-proyecto {
+        justify-content: center;
+    }
+    .imagen-proyecto {
+        border-radius: 0%;
+    }
+}
+/*==================
+=hard & soft skills=
+===================*/
+.skills {
+    max-height: 150px;
+    min-height: 50px;
+}
+/*Redes sociales*/
+#hard-soft-skills {
+    display: flex;
+    justify-content:center;
+    padding: 15px;
+}
+.img-skills {
+    max-height: 150px;
+}
+/*Pantallas pequeñas*/
+@media (max-width:575px) {
+    #sociales {
+        justify-content: center;
+    }
+}
+/*======
+=footer=
+======*/
+footer {
+    padding: 20px;
+    display: flex;
+    height: 70 px;
+    background-color: black;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 10px;
+}
+/*Logo argentina programa*/
+#logo-footer {
+    display: flex;
+    justify-content: center;
+}
+.logo-footer-arg {
+    max-height: 75px;
+    min-height: 50px;
+}
+/*Redes sociales*/
+#sociales-footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.redes-footer {
+    max-height: 50px;
+}
+
+/*Pantallas pequeñas*/
+@media (max-width:575px) {
+    #sociales-footer {
+        justify-content: center;
+    }
+}
