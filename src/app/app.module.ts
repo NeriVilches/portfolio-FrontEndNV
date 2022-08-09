@@ -7,6 +7,7 @@ import { ExperienciaYEducacionComponent } from './componentes/experiencia-y-educ
 import { HardAndSoftSkillsComponent } from './componentes/hard-and-soft-skills/hard-and-soft-skills.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './componentes/footer/footer.component';
     FooterComponent
   ], 
   imports: [     //cuales son los bloques que necesita importar
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],  //proveedores de servicios
   bootstrap: [AppComponent]

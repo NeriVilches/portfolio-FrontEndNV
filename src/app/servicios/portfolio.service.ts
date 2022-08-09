@@ -7,9 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class PortfolioService {
 
-  constructor(private Http:HttpClient) { }
+  constructor(private http:HttpClient) { }
   obtenerDatos ():Observable<any>{
-    console.log("el servicio portfolio esta corriendo")
-    return this.Http.get('C:/Users/lizvi/OneDrive/Desktop/Portfolio/portfolio-FrontEndNV/src/assets/data/data.json')
+    return this.http.get("../assets/data/data.json");
   }
 }

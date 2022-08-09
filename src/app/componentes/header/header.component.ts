@@ -7,11 +7,13 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  headerNav:any;
   constructor(private datosPortfolio:PortfolioService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos();
+    this.datosPortfolio.obtenerDatos().subscribe(data =>{
+      this.headerNav=data;
+    });
   }
 
 }
